@@ -1,6 +1,7 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "vite build",
   "outputDirectory": "dist/spa",
+  "framework": "vite",
   "rewrites": [
     {
       "source": "/(.*)",
