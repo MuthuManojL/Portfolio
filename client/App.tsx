@@ -8,7 +8,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import MainLayout from "./components/layout/MainLayout";
-import PrivacyModal from "./components/PrivacyModal";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "@/theme/ThemeProvider";
@@ -35,7 +34,6 @@ const AppContent = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <PrivacyModal />
       <WelcomeMessage />
       <BitsCursorLayer />
       <BrowserRouter>
