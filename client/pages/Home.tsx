@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { BitsAccolade } from "@/bits/BitsAccolade";
 import { BitsTiltCard } from "@/bits/BitsTiltCard";
-import { BitsCircularGallery } from "@/bits/BitsCircularGallery";
+import AchievementsGallery from "@/bits/AchievementsGallery";
 import { useTheme } from "@/theme/ThemeProvider";
 import { ArrowRight, Zap, Trophy, Microscope } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -84,15 +84,8 @@ export default function Home() {
       <HeroSection isDarkMode={isDarkMode} />
 
       {/* Achievements Gallery Section */}
-      <section
-        className={cn(
-          "relative",
-          isDarkMode 
-            ? "bg-gradient-to-b from-tech-dark via-tech-darker to-tech-dark" 
-            : "bg-gradient-to-b from-white via-indigo-50/20 to-white"
-        )}
-      >
-        <BitsCircularGallery />
+      <section className="relative">
+        <AchievementsGallery />
       </section>
 
       {/* Featured Projects Section */}
